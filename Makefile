@@ -13,5 +13,5 @@ pip-tools:
 	pip-sync requirements.txt
 
 # Run developement server from root directory
-run-app:
-	uvicorn app.main:app --reload --host=0.0.0.0 --port=8000 
+run-test-app:
+	FLASK_APP=TestApp/index.py FLASK_ENV=development  flask run --host="0.0.0.0" --port=5000 
