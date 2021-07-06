@@ -14,4 +14,4 @@ pip-tools:
 
 # Run test app server from root directory
 run-test-app:
-	FLASK_APP=TestApp/index.py FLASK_DEBUG=1 flask run --host="0.0.0.0" --port=5000 
+	FLASK_APP=TestApp/index.py FLASK_DEBUG=1 flask run --host="0.0.0.0" --port=5000
