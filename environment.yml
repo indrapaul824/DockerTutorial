@@ -1,4 +1,4 @@
-name: fastapi-38
+name: docker-38
 channels:
   - defaults
 dependencies:
