@@ -2,4 +2,4 @@ flask == 2.0.1
 requests
 scikit-learn
 pandas
-tensorflow ==1.0.0
+tensorflow ==2.4.2
