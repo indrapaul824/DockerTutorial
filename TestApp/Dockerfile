@@ -4,8 +4,11 @@ COPY . /app
 
 WORKDIR /app
 
-RUN apt-get update -y
-RUN apt-get install -y python3-pip libssl-dev libffi-dev python3-dev build-essential
+RUN apt-get update && \
+    apt-get install python3 python3-pip python3-dev -y
+
+ENV export LC_ALL=C.UTF-8 
+ENV export LANG=C.UTF-8
 
 RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
