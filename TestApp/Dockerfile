@@ -4,14 +4,11 @@ COPY . /app
 
 WORKDIR /app
 
-RUN apt-get update && \
-    apt-get install python3 python3-pip python3-dev -y
 
-ENV export LC_ALL=C.UTF-8 
-ENV export LANG=C.UTF-8
+RUN apt-get update -y && \
+    apt-get install --no-install-recommends -y python3.8 python-pip python3-pip python3.8-dev
 
-RUN pip3 install --upgrade pip
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 
 EXPOSE 5000
 
