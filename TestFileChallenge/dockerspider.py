@@ -1,4 +1,3 @@
-
 import scrapy
 
 #section 2
