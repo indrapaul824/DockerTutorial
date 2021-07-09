@@ -1,0 +1,9 @@
+version: "3.8"
+services: 
+    datascience-notebook:
+        image: jupyter/tensorflow-notebook
+        volumes: 
+            - /path/
+        ports: 
+            - 8888:8888
+        container_name: compose_text
